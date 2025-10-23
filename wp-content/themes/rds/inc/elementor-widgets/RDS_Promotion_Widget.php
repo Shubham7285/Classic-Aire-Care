@@ -364,7 +364,7 @@ if ( $data && is_numeric( $data['id'] ) ) {
                     new Swiper(".home-coupon-swiper-<?php echo $widget_id ?>", {
                         spaceBetween: 30,
                         slidesPerView: 1,
-                        loop: true,
+                        loop: false,
                         pagination: {
                             el: ".home-coupon-pagination-<?php echo $widget_id ?>",
                             clickable: true

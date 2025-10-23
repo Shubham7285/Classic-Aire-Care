@@ -259,7 +259,7 @@ if ( $data && is_numeric( $data['id'] ) ) {
 		$args["page_templates"]["landing_page"]["banner"]["subheading"] = sanitize_text_field($settings["subheading"]);
 		$args["page_templates"]["landing_page"]["banner"]["button_text"] = sanitize_text_field($settings["button_text"]);
 		$args["page_templates"]["landing_page"]["banner"]["button_link"] = sanitize_text_field($settings["button_link"]);
-		$args["page_templates"]["landing_page"]["banner"]["content"] = $settings["content"];
+		$args["page_templates"]["landing_page"]["banner"]["content"] = sanitize_text_field($settings["content"]);
 		$args["page_templates"]["landing_page"]["banner"]["gravity_form_id"] = sanitize_text_field($settings["gravity_form_id"]);
 		$args["page_templates"]["landing_page"]["banner"]["form_heading"] = sanitize_text_field($settings["form_heading"]);
 
